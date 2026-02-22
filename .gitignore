@@ -1,0 +1,35 @@
+node_modules
+.next
+.env
+.env.local
+.env.production
+.env.development
+.DS_Store
+.vercel
+.env*.local
+
+# Secrets and Test Scripts
+supabase_keys.txt
+*.js
+!next.config.js
+!postcss.config.js
+!tailwind.config.js
+!tailwind.config.ts
+!eslint.config.mjs
+!next.config.ts
+!postcss.config.mjs
+!jest.config.js
+!lib/**/*.js
+!scripts/**/*.js
+!app/**/*.js
+
+# Exclude all root level test scripts
+/test_*.js
+/get_*.js
+/inspect_*.js
+/debug_*.js
+/simulate_*.js
+/trigger_*.js
+/full_system_test.js
+/optimize_*.js
+/fix_*.js
