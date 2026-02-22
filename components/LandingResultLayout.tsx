@@ -12,6 +12,8 @@ interface LandingResultLayoutProps {
     status?: string
     ip?: string
     responseId?: string
+    sessionToken?: string
+    [key: string]: any
 }
 
 export default function LandingResultLayout({
@@ -22,7 +24,9 @@ export default function LandingResultLayout({
     code = 'N/A',
     status = 'N/A',
     ip = 'N/A',
-    responseId = 'N/A'
+    responseId = 'N/A',
+    sessionToken = 'N/A',
+    ...rest
 }: LandingResultLayoutProps) {
 
     const themes = {
